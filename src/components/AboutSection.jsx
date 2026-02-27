@@ -1,6 +1,7 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
+import portImg from "../assets/images/port-img.png";
 
 const AboutSection = () => {
   return (
@@ -25,7 +26,7 @@ const AboutSection = () => {
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 blur-2xl rounded-3xl"></div>
 
             <img
-              src="/src/assets/images/port-img.png"
+              src={portImg}
               alt="Ebuka"
               className="w-[320px] rounded-2xl relative z-10"
             />
