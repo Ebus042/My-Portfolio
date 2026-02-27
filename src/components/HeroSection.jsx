@@ -52,11 +52,11 @@ const HeroSection = () => {
 
           <div className="mt-8 flex gap-4">
             <button className="px-6 py-3 bg-blue-500 hover:bg-blue-600 transition rounded-lg text-white">
-              View Projects
+              <a href="#projects">View Projects</a>
             </button>
 
             <button className="px-6 py-3 border border-gray-500 hover:border-blue-400 transition rounded-lg text-gray-300">
-              Contact Me
+              <a href="#contact">Contact Me</a>
             </button>
           </div>
         </div>
