@@ -1,9 +1,13 @@
+import akureRentImg from "../assets/images/akureRent-img.png";
+import clothingImg from "../assets/images/clothing-img.png";
+import schoolLoginImg from "../assets/images/school-login.png";
+
 export const projects = [
   {
     title: "AkureRent",
     description:
       "A modern real estate web application for listing and renting properties.",
-    image: "/src/assets/images/akureRent-img.png",
+    image: akureRentImg,
     tech: ["React", "Tailwind", "EmailJs"],
     live: "https://akure-housing.vercel.app/",
     github: "#",
@@ -12,7 +16,7 @@ export const projects = [
     title: "Clothing E-commerce",
     description:
       "A responsive e-commerce application for buying and selling clothing.",
-    image: "/src/assets/images/clothing-img.png",
+    image: clothingImg,
     tech: ["React", "Tailwind"],
     live: "https://ebus042.github.io/Clothing/",
     github: "#",
@@ -21,7 +25,7 @@ export const projects = [
     title: "School LogIn System",
     description:
       "A modern web application for managing school logins and user authentication.",
-    image: "/src/assets/images/school-login.png",
+    image: schoolLoginImg,
     tech: ["React", "Tailwind", "Firebase"],
     live: "https://ebus042.github.io/NEA-School-Portal/",
     github: "#",
@@ -30,7 +34,7 @@ export const projects = [
     title: "Clothing E-commerce",
     description:
       "A responsive e-commerce application for buying and selling clothing.",
-    image: "/src/assets/images/clothing-img.png",
+    image: clothingImg,
     tech: ["React", "API", "CSS"],
     live: "https://ebus042.github.io/Clothing/",
     github: "#",
@@ -39,7 +43,7 @@ export const projects = [
     title: "AkureRent",
     description:
       "A modern real estate web application for listing and renting properties.",
-    image: "/src/assets/images/akureRent-img.png",
+    image: akureRentImg,
     tech: ["React", "Tailwind", "EmailJs"],
     live: "https://akure-housing.vercel.app/",
     github: "#",
@@ -48,7 +52,7 @@ export const projects = [
     title: "Clothing E-commerce",
     description:
       "A responsive e-commerce application for buying and selling clothing.",
-    image: "/src/assets/images/clothing-img.png",
+    image: clothingImg,
     tech: ["React", "API", "CSS"],
     live: "https://ebus042.github.io/Clothing/",
     github: "#",
