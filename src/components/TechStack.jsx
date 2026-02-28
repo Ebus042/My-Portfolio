@@ -1,5 +1,7 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss, SiVite, SiFirebase } from "react-icons/si";
+import { motion } from "framer-motion";
+import { fadeInUp, staggerContainer } from "../animations/variants";
 
 const TechStack = () => {
   return (
@@ -30,7 +32,13 @@ const TechStack = () => {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8"
+        >
           {[
             { icon: <FaHtml5 />, name: "HTML5", color: "#E34F26" },
             { icon: <FaCss3Alt />, name: "CSS3", color: "#1572B6" },
@@ -41,7 +49,8 @@ const TechStack = () => {
             { icon: <SiVite />, name: "Vite", color: "#646CFF" },
             { icon: <SiFirebase />, name: "Firebase", color: "#FFCA28" },
           ].map((tech, index) => (
-            <div
+            <motion.div
+              variants={fadeInUp}
               key={index}
               className="group relative flex flex-col items-center justify-center p-8 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-md transition duration-300 hover:scale-105"
             >
@@ -59,9 +68,9 @@ const TechStack = () => {
               </div>
 
               <p className="text-gray-300 relative z-10">{tech.name}</p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

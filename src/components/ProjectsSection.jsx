@@ -1,5 +1,7 @@
 import React from "react";
 import { projects } from "../data/projects";
+import { motion } from "framer-motion";
+import { fadeInUp, staggerContainer } from "../animations/variants";
 
 const ProjectsSection = () => {
   return (
@@ -30,9 +32,16 @@ const ProjectsSection = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-10"
+        >
           {projects.map((project, index) => (
-            <div
+            <motion.div
+              variants={fadeInUp}
               key={index}
               className="group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-md transition duration-300 hover:scale-[1.02] hover:border-blue-500/40"
             >
@@ -87,9 +96,9 @@ const ProjectsSection = () => {
                   </a>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

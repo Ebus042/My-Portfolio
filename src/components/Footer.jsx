@@ -2,6 +2,28 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
+  const navLinks = [
+    {
+      name: "Home",
+      href: "#home",
+    },
+    {
+      name: "About",
+      href: "#about",
+    },
+    {
+      name: "Tech Stack",
+      href: "#tech-stack",
+    },
+    {
+      name: "Projects",
+      href: "#projects",
+    },
+    {
+      name: "Contact",
+      href: "#contact",
+    },
+  ];
   return (
     <footer className="relative bg-[#0f172a] border-t border-white/10 overflow-hidden">
       {/* Subtle Glow */}
@@ -31,19 +53,18 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-3 text-gray-400">
-              <li className="hover:text-blue-400 transition cursor-pointer">
-                Home
-              </li>
-              <li className="hover:text-blue-400 transition cursor-pointer">
-                About
-              </li>
-              <li className="hover:text-blue-400 transition cursor-pointer">
-                Projects
-              </li>
-              <li className="hover:text-blue-400 transition cursor-pointer">
-                Contact
-              </li>
+            <ul className="gap-2 text-gray-400 grid lg:grid-cols-2 lg:text-lg">
+              {navLinks.map((link, index) => (
+                <li key={index}>
+                  <a
+                    href={link.href}
+                    className="hover:text-blue-400 transition relative group"
+                  >
+                    {link.name}
+                    <span className="absolute left-0 -bottom-2 w-0 h-[2px] bg-blue-500 transition-all group-hover:w-full"></span>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -52,12 +73,15 @@ const Footer = () => {
             <h4 className="text-white font-semibold mb-4">Connect</h4>
 
             <div className="flex justify-center md:justify-start gap-6 text-2xl">
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a
+                href="https://github.com/Ebus042"
+                className="text-gray-400 hover:text-white transition"
+              >
                 <FaGithub />
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/in/chukwu-ebuka-079926379/"
                 className="text-gray-400 hover:text-blue-400 transition"
               >
                 <FaLinkedin />

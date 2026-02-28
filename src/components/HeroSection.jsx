@@ -1,10 +1,16 @@
 import heroImg from "../assets/images/port-img.png";
+import { motion } from "framer-motion";
+import { fadeInUp } from "../animations/variants";
 
 const HeroSection = () => {
   return (
-    <section
-      id="home"
-      className="relative min-h-screen bg-[#0f172a] overflow-hidden"
+    <motion.section
+      id="about"
+      variants={fadeInUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      className="relative py-5 bg-[#111827] overflow-hidden scroll-mt-24"
     >
       <div
         className="absolute right-[-250px] top-[-150px] w-[800px] h-[800px] rounded-full blur-[140px]"
@@ -84,7 +90,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

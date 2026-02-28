@@ -19,7 +19,7 @@ export const projects = [
     image: clothingImg,
     tech: ["React", "Tailwind"],
     live: "https://ebus042.github.io/Clothing/",
-    github: "#",
+    github: "https://github.com/Ebus042/Clothing",
   },
   {
     title: "School LogIn System",
@@ -28,7 +28,7 @@ export const projects = [
     image: schoolLoginImg,
     tech: ["React", "Tailwind", "Firebase"],
     live: "https://ebus042.github.io/NEA-School-Portal/",
-    github: "#",
+    github: "https://github.com/Ebus042/NEA-School-Portal/",
   },
   {
     title: "Clothing E-commerce",
@@ -37,7 +37,7 @@ export const projects = [
     image: clothingImg,
     tech: ["React", "API", "CSS"],
     live: "https://ebus042.github.io/Clothing/",
-    github: "#",
+    github: "https://github.com/Ebus042/Clothing",
   },
   {
     title: "AkureRent",
@@ -46,15 +46,15 @@ export const projects = [
     image: akureRentImg,
     tech: ["React", "Tailwind", "EmailJs"],
     live: "https://akure-housing.vercel.app/",
-    github: "#",
+    github: "https://github.com/Ebus042",
   },
   {
     title: "Clothing E-commerce",
     description:
       "A responsive e-commerce application for buying and selling clothing.",
     image: clothingImg,
-    tech: ["React", "API", "CSS"],
+    tech: ["React", "API", "Tailwind"],
     live: "https://ebus042.github.io/Clothing/",
-    github: "#",
+    github: "https://github.com/Ebus042/Clothing",
   },
 ];
