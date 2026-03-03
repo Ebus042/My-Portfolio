@@ -37,7 +37,7 @@ const ProjectsSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-10"
+          className="grid md:grid-cols-2 gap-10"
         >
           {projects.map((project, index) => (
             <motion.div

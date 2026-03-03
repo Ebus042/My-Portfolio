@@ -23,15 +23,7 @@ export const projects = [
     live: "https://ebus042.github.io/Clothing/",
     github: "https://github.com/Ebus042/Clothing",
   },
-  {
-    title: "School LogIn System",
-    description:
-      "A modern web application for managing school logins and user authentication.",
-    image: schoolLoginImg,
-    tech: ["React", "Tailwind", "Firebase"],
-    live: "https://ebus042.github.io/NEA-School-Portal/",
-    github: "https://github.com/Ebus042/NEA-School-Portal/",
-  },
+
   {
     title: "Skin Care E-commerce",
     description:
@@ -49,14 +41,5 @@ export const projects = [
     tech: ["React", "Tailwind"],
     live: "https://ebus042.github.io/hair-brand-project/",
     github: "https://github.com/Ebus042/hair-brand-project",
-  },
-  {
-    title: "Clothing E-commerce",
-    description:
-      "A responsive e-commerce application for buying and selling clothing.",
-    image: clothingImg,
-    tech: ["React", "API", "Tailwind"],
-    live: "https://ebus042.github.io/Clothing/",
-    github: "https://github.com/Ebus042/Clothing",
   },
 ];
