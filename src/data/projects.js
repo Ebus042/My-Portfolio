@@ -2,6 +2,7 @@ import akureRentImg from "../assets/images/akureRent-img.png";
 import clothingImg from "../assets/images/clothing-img.png";
 import schoolLoginImg from "../assets/images/school-login.png";
 import skincareImg from "../assets/images/skin-care-img.png";
+import hairSalesImg from "../assets/images/hair-brand.png";
 
 export const projects = [
   {
@@ -41,13 +42,13 @@ export const projects = [
     github: "https://github.com/Ebus042/skincare-project",
   },
   {
-    title: "AkureRent",
+    title: "Hair Sales E-commerce",
     description:
-      "A modern real estate web application for listing and renting properties.",
-    image: akureRentImg,
-    tech: ["React", "Tailwind", "EmailJs"],
-    live: "https://akure-housing.vercel.app/",
-    github: "https://github.com/Ebus042",
+      "A modern e-commerce application for buying and selling hair products.",
+    image: hairSalesImg,
+    tech: ["React", "Tailwind"],
+    live: "https://ebus042.github.io/hair-brand-project/",
+    github: "https://github.com/Ebus042/hair-brand-project",
   },
   {
     title: "Clothing E-commerce",
